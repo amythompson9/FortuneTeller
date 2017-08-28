@@ -16,6 +16,7 @@ namespace FortuneTeller
 
             //1
             //Ask the user for the user’s first name
+            Console.WriteLine("Would you like to know what your future holds?");
             Console.WriteLine("Please enter your first name.");
             string firstName = Console.ReadLine();
 
@@ -33,7 +34,7 @@ namespace FortuneTeller
 
             //Ask the user for the user’s favorite ROYGBIV color
             Console.WriteLine("What is your favorite ROYGBIV color? Enter 'Help' for a list of ROYGBIV colors");
-            string favoriteColor = Console.ReadLine();
+            string favoriteColor = Console.ReadLine().ToLower();
             if (favoriteColor.ToLower() == "help")
             {
                 Console.WriteLine("ROYGBIV colors are \nRed \nOrange \nYellow \nGreen \nBlue \nIndigo \nViolet \nPlease choose a color.");
@@ -48,11 +49,11 @@ namespace FortuneTeller
             //If the user’s age is an odd number, then they will retire in ____ years, or ___ years if their age is an 
             //even number.
             int retireYears = 0;
-            if (userAge % 2 == 1)
+            if(userAge % 2 == 1)
             {
                 retireYears = 37;
             }
-            if (userAge % 2 == 0)
+            if(userAge % 2 == 0)
             {
                 retireYears = 73;
             }
@@ -64,23 +65,23 @@ namespace FortuneTeller
             //or more than 3 then they will have a vacation home in ____(location).
             //If the user enters a number that is less than 0, they should get a bad vacation home!
             string vacationHome = " ";
-            if (siblings == 0)
+            if(siblings == 0)
             {
                 vacationHome = "in Iceland...all alone";
             }
-            else if (siblings == 1)
+            else if(siblings == 1)
             {
                 vacationHome = "in Paris";
             }
-            else if (siblings == 2)
+            else if(siblings == 2)
             {
                 vacationHome = "in the beautiful land of Delaware";
             }
-            else if (siblings == 3)
+            else if(siblings == 3)
             {
                 vacationHome = "in Trinidad";
             }
-            else if (siblings >= 4)
+            else if(siblings >= 4)
             {
                 vacationHome = "on a far away private island to get away from this giant family";
             }
@@ -91,35 +92,34 @@ namespace FortuneTeller
 
             //Depending on which ROYGBIV color is the user’s favorite, 
             //they will have a specific mode of transportation(i.e.car, boat, plane, etc.)
-            string transport = "";
+            string transport = " ";
             favoriteColor = favoriteColor.ToLower();
-            Console.WriteLine(favoriteColor + "Before if statemnets");
-            if(favoriteColor == "red")
+            if(favoriteColor.ToLower() == "red")
             {
                 transport = "driving the same car you had when you were 22.";
             }
-            else if (favoriteColor == "orange")
+            else if(favoriteColor.ToLower() == "orange")
             {
                 transport = "driving a paddle boat shaped like a swan.";
             }
-            else if (favoriteColor == "yellow")
+            else if(favoriteColor.ToLower() == "yellow")
             {
                 transport = "driving a double-decker tourist bus.";
             }
-            else if (favoriteColor == "green")
+            else if(favoriteColor.ToLower() == "green")
             {
                 transport = "driving a car that is just a little bit too small for you.";
             }
-            else if (favoriteColor.ToLower() == "blue")
+            else if(favoriteColor.ToLower() == "blue")
             {
                 transport = "driving very sensible Honda Civic and telling eveyone about the great mileage.";
             }
-            else if (favoriteColor == "indigo")
+            else if(favoriteColor.ToLower() == "indigo")
             {
                 transport = "driving your grandmother's old car.";
             }
 
-            else if(favoriteColor == "violet")
+            else if(favoriteColor.ToLower() == "violet")
             {
                 transport = "driving one of those old-timey bikes with the one big wheel in the front.";
             }
@@ -161,7 +161,7 @@ namespace FortuneTeller
             //Program should be able to handle whether or not a user inputs capital or lowercase letters.
 
             Console.WriteLine("Thanks for playing. Here is your fortune.");
-            Console.WriteLine(firstName + " " + lastName + " will retire in " + retireYears + " years with $" + money + " a vacation home " + vacationHome + " and " + transport);
+            Console.WriteLine(firstName + " " + lastName + " will retire in " + retireYears + " years with $" + money + ", a vacation home " + vacationHome + " and " + transport);
 
             //4
             //Give the user the ability to quit the program at any point where the program is looking for user input, 
