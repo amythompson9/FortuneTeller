@@ -4,3 +4,10 @@ c:\users\wecancodeit\documents\visual studio 2015\Projects\FortuneTeller\Fortune
 c:\users\wecancodeit\documents\visual studio 2015\Projects\FortuneTeller\FortuneTeller\bin\Debug\FortuneTeller.pdb
 c:\users\wecancodeit\documents\visual studio 2015\Projects\FortuneTeller\FortuneTeller\obj\Debug\FortuneTeller.exe
 c:\users\wecancodeit\documents\visual studio 2015\Projects\FortuneTeller\FortuneTeller\obj\Debug\FortuneTeller.pdb
+C:\Users\amyth\source\repos\FortuneTeller2\FortuneTeller\bin\Debug\FortuneTeller.exe.config
+C:\Users\amyth\source\repos\FortuneTeller2\FortuneTeller\bin\Debug\FortuneTeller.exe
+C:\Users\amyth\source\repos\FortuneTeller2\FortuneTeller\bin\Debug\FortuneTeller.pdb
+C:\Users\amyth\source\repos\FortuneTeller2\FortuneTeller\obj\Debug\FortuneTeller.csprojResolveAssemblyReference.cache
+C:\Users\amyth\source\repos\FortuneTeller2\FortuneTeller\obj\Debug\FortuneTeller.csproj.CoreCompileInputs.cache
+C:\Users\amyth\source\repos\FortuneTeller2\FortuneTeller\obj\Debug\FortuneTeller.exe
+C:\Users\amyth\source\repos\FortuneTeller2\FortuneTeller\obj\Debug\FortuneTeller.pdb
